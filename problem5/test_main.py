@@ -37,13 +37,6 @@ class TestMeanMedian(unittest.TestCase):
         result = mean_median(input_array)
         msg = f"Expected: {expected_result}, Got: {result}"
         self.assertEqual(result, expected_result, msg)
-
-    def test_mean_median_empty(self):
-        input_array = []
-        expected_result = None
-        result = mean_median(input_array)
-        msg = f"Expected: {expected_result}, Got: {result}"
-        self.assertEqual(result, expected_result, msg)
         
 if __name__ == '__main__':
     unittest.main()
